@@ -13,6 +13,10 @@ RUN npm install
 # Copy the rest of the application code to the working directory
 COPY . .
 COPY .env.sample .env
+
+#Run Test 
+RUN npm run test
+
 # Expose the port the app runs on
 EXPOSE 5000
 
